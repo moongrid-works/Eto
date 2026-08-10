@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eto | Top</title>
+
+  <!-- =============================
+       CSSリセット
+  ============================= -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- =============================
+       Slick Slider CSS
+  ============================= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <!-- =============================
+       メインCSS
+  ============================= -->
+  <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+
+<body>
+
+  <!-- =============================
+       Header
+       - News Slider
+       - PCナビゲーション
+       - SPハンバーガー
+       - Drawer Menu
+  ============================= -->
+  <header class="header">
+
+    <!-- News Slider（お知らせ） -->
+    <div class="news-slider">
+      <div class="news-slider__item">
+        <p>
+          新作アイテムのコーディネートをInstagramにて公開中。
+          詳しくは<a href="#">こちら</a>。
+        </p>
+      </div>
+      <div class="news-slider__item">
+        <p>
+          対象商品をご購入者いただいた方にフレグランスのサンプルをお渡ししております。
+          ※なくなり次第終了。 ※一部地域を除く。
+          詳しくは<a href="#">こちら</a>。
+        </p>
+      </div>
+    </div>
+
+    <!-- ブランドロゴ＋PCナビ -->
+  <div class="header__main">
+
+    <!-- ブランドロゴ -->
+    <div class="header__logo">
+      <a href="#top" aria-label="Eto ホーム">
+    <img src="./common/SVG/Brandikon.svg" alt="Eto ブランドアイコン">
+      </a>
+    </div>
+
+    <!-- PCナビゲーション -->
+    <nav class="nav-top" aria-label="Primary Navigation">
+      <ul class="nav-top__list">
+        <li class="nav-top__item"><a href="#brand-concept" aria-current="page">Brand concept</a></li>
+        <li class="nav-top__item"><a href="#new-item">New item</a></li>
+        <li class="nav-top__item"><a href="#collection">Collection</a></li>
+        <li class="nav-top__item"><a href="#story">Story</a></li>
+        <li class="nav-top__item"><a href="#store">Store</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <!-- =============================
+       Hamburger Menu（SPのみ）
+       - オセロ反転アニメーション
+  ============================= -->
+  <div id="hamburger" class="hamburger-wrapper">
+  <div class="hamburger" aria-label="メニュー" aria-expanded="false" role="button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+  <!-- =============================
+       Drawer Menu（SP用）
+       - ハンバーガーで開閉
+  ============================= -->
+  <div id="drawer" class="drawer" aria-hidden="true">
+  <ul class="drawer__list">
+    <li class="drawer__item"><a href="#brand-concept">Brand concept</a></li>
+    <li class="drawer__item"><a href="#new-item">New item</a></li>
+    <li class="drawer__item"><a href="#collection">Collection</a></li>
+    <li class="drawer__item"><a href="#story">Story</a></li>
+    <li class="drawer__item"><a href="#store">Store</a></li>
+    <li class="drawer__item"><a href="#">Sign in</a></li>
+    <li class="drawer__item"><a href="#">Wish list</a></li>
+    <li class="drawer__item"><a href="#">Shopping bag</a></li>
+    <li class="drawer__item"><a href="#">Instagram</a></li>
+  </ul>
+</div>
+
+<!-- オーバーレイ（idつき1つだけ） -->
+<div id="drawer-overlay" class="drawer-overlay" hidden aria-hidden="true"></div>
+
+  <main>
+    <!-- =============================
+         Top Section
+         - 背景動画 + ブランド名オーバーレイ
+    ============================= -->
+    <h1 class="visually-hidden">Éto Official Website</h1>
+    <section class="top" id="top">
+      <video
+        class="top__video"
+        autoplay muted loop playsinline
+        poster="./common/4236565-uhd_3840_2160_24fps-soConvert.webp"
+        aria-label="ブランドイメージ動画"
+      >
+        <source src="./common/4236565-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        お使いのブラウザは動画に対応していません
+      </video>
+
+      <!-- SP用画像 -->
+       <div class="top__overlay">
+      <!-- ロゴ画像に置き換え -->
+  <a href="#top" aria-label="Eto ホーム">
+    <img src="./common/SVG/Brandikon.svg" alt="Eto ブランドロゴ" class="top__logo">
+  </a>
+
+  <!-- スクリーンリーダー用の隠しテキスト -->
+  <span class="visually-hidden">Live Beautifully, Naturally.</span>
+</div>
+</section>
+
+<div class="section-divider"></div>
+
+    <!-- =============================
+         Brand Concept Section
+    ============================= -->
+    <section class="brand-concept" id="brand-concept">
+      <div class="brand-concept__wrap">
+        <div class="brand-concept__text">
+          <h2 class="brand-concept__title">Brand concept</h2>
+          <span class="brand-concept__catch">―自然体の美しさを、日常に―</span>
+          <p class="brand-concept__description">
+            日々の暮らしを、もう少し自由に。もう少し心地よく。<br>
+            私たちの服づくりは、そんな想いから始まります。<br>
+            大切にしているのは、肩の力を抜いた上品さ。自然素材のぬくもりと、洗練されたシルエット。
+            日常の中で、ふと「これがちょうどいい」と思えるような服。<br>
+            忙しい朝にも、週末の午後にも、家族と過ごす時間や、自分に戻る瞬間にも、そっと寄り添う存在でありたいと思っています。
+            トレンドを追うよりも、長く愛されるスタイルを。<br>
+            華やかさよりも、心からのリラックスを。<br>
+            それは、あなたの人生を少しだけ豊かにする“日常の贅沢”。<br>
+            身にまとうたびに、心まで豊かに整うような、そんな服を、私たちはつくり続けます。<br>
+          </p>
+          <p class="brand-concept__closing">
+            <span class="brand-concept__highlight">Live Beautifully, Naturally.</span>
+            <span class="brand-concept__subtext">―自然体で生きる、という上質。</span>
+          </p>
+        </div>
+
+        <div class="brand-concept__image">
+          <img src="./common/material_2【Brandconsept】.jpg" alt="Eto ブランドコンセプトイメージ">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =============================
+         New Item Section
+         - 新作アイテムスライダー
+    ============================= -->
+    <section class="new-item" id="new-item">
+      <header class="new-item__header">
+        <h2 class="new-item__title">New item</h2>
+        <p class="new-item__lead">新作アイテムをご覧いただけます。</p>
+      </header>
+
+      <div class="new-item__slider">
+        <div class="new-item__slide"><img src="./common/material_50【Newitem_1】.jpg" alt="New item 1" loading="lazy"></div>
+        <div class="new-item__slide"><img src="./common/material_42【Newitem_2】.jpg" alt="New item 2" loading="lazy"></div>
+        <div class="new-item__slide"><img src="./common/material_8【Newitem_3】.jpg" alt="New item 3" loading="lazy"></div>
+        <div class="new-item__slide"><img src="./common/material_7【Newitem_4】.jpg" alt="New item 4" loading="lazy"></div>
+        <div class="new-item__slide"><img src="./common/material_10【Newitem_5】.jpg" alt="New item 5" loading="lazy"></div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =============================
+         Collection Section
+         - カテゴリー別表示
+    ============================= -->
+    <section class="collection" id="collection">
+      <div class="collection__wrap">
+
+        <!-- テキスト部分 -->
+        <div class="collection__text">
+          <h2 class="collection__title">Collection</h2>
+          <p class="collection__lead">カテゴリー別にご覧いただけます。</p>
+        </div>
+
+        <!-- 画像部分 -->
+         <div class="collection__image">
+          <div class="collection__item">
+            <img src="./common/material_47【Collection_1】.jpg" alt="Collection 1" loading="lazy">
+            <p class="collection__category"><a href="#">ファッション ＞</a></p>
+          </div>
+
+          <div class="collection__item">
+            <img src="./common/material_25【Collection_2】.jpg" alt="Collection 2" loading="lazy">
+            <p class="collection__category"><a href="#">レザーグッズ・アクセサリー ＞</a></p>
+          </div>
+
+          <div class="collection__item">
+            <img src="./common/material_46【Collection_3】.jpg" alt="Collection 3" loading="lazy">
+            <p class="collection__category"><a href="#">ジュエリー ＞</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =============================
+         Story Section
+         - ブランドストーリー
+    ============================= -->
+    <section class="story" id="story">
+      <div class="story__wrap">
+        <div class="story__text">
+          <h2 class="story__title">Story</h2>
+          <p class="story__description">
+            「Éto」の創始者 Aurélie Étoile Moreau（オレリー・エトワール・モロー） は、パリ郊外出身。<br>
+            母が趣味で作るレザー小物を見て育ち、「手仕事の美しさ」と「素材の大切さ」を自然に学びました。<br>
+            その後、美術学校でデザインを学び、パリの伝統的な革職人アトリエで修行します。<br>
+
+            20代後半、母への感謝の気持ちを込めて、母にプレゼントするためのハンドメイドバッグを制作。そのバッグを母が友人や知人に見せたところ評判になり、「自分のバッグも欲しい」という声が広がりました。この反応をきっかけに、オレリーは自身のアトリエを開き、少量ずつハンドメイドバッグや小物を販売するようになります。<br>
+
+            「手仕事の美しさ」と「素材を生かすデザイン」を大切にした繊細で上品なデザイン。<br>
+            時代に左右されず、長く愛用できる普遍的なエレガンスは、多くの女性たちを魅了し続けています。<br>
+          </p>
+        </div>
+
+        <div class="story__image">
+          <img src="./common/material_14【Story】.jpg" alt="ストーリーイメージ" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =============================
+     Store Section
+     - 営業時間・店舗情報
+     - 画像・サービス情報
+============================= -->
+<section class="store" id="store">
+  <div class="store__contact-hours">
+    <h2 class="store__title">Store</h2>
+    <div class="store__contact">
+      <p><strong>お問い合わせ</strong></p>
+      <ul>
+        <li><a href="#">オンラインチャット　＞</a></li>
+        <li><a href="#">専用ダイヤルに電話する　＞</a></li>
+        <li><a href="#">店舗検索　＞</a></li>
+        <li><a href="#">サイズガイド　＞</a></li>
+        <li><a href="#">よくあるご質問　＞</a></li>
+      </ul>
+    </div>
+    <div class="store__hours" aria-label="営業時間情報">
+      <p><strong>営業時間</strong></p>
+      <p>10:00～20:00　年中無休（年末年始を除く）。</p>
+    </div>
+  </div>
+
+  <div class="store__images-texts">
+    <div class="store__left-column">
+      <img src="./common/material_31【Store_1】.jpg" alt="Store イメージ1" loading="lazy">
+      <div class="store__after-service">
+        <p>アフターサービス</p>
+        <p>クリーニング、修理、サイズ直しのご依頼を承っております。</p>
+        <p class="store__link-center"><a href="contact/index.php" class="service_btn">サービスのご依頼　＞</a></p>
+      </div>
+    </div>
+    <div class="store__right-column">
+      <img src="./common/material_28【Store_2】.jpg" alt="Store イメージ2" loading="lazy">
+      <div class="store__care">
+        <p>製品のお手入れ</p>
+        <p>メタルやレザー、ジュエリーの素材のお手入れ方法をご覧ください。</p>
+        <p class="store__link-center"><a href="#">詳しく見る　＞</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- =============================
+       Footer Section
+       - ライン / ホームボタン / 本体 / コピーライト
+  ============================= -->
+  <footer class="footer">
+    <!-- 上ライン -->
+    <div class="footer__line footer__line--thin"></div>
+
+    <!-- ホームボタン -->
+    <div class="footer__home"><a href="#top">ホーム</a></div>
+
+    <!-- 下ライン -->
+    <div class="footer__line footer__line--thick"></div>
+
+    <!-- フッター本体 -->
+    <div class="footer__container">
+      <div class="footer__bottom">
+  <div class="footer__client-service">
+    <p><strong>クライアントサービス</strong></p>
+    <ul>
+      <li><a href="#">クライアントサービスへのお問い合わせ</a></li>
+      <li><a href="#">お電話でのご注文</a></li>
+      <li><a href="#">お手入れと修理</a></li>
+      <li><a href="#">よくあるご質問</a></li>
+      <li><a href="#">発送と返品について</a></li>
+      <li><a href="#">ホリデーギフト</a></li>
+    </ul>
+  </div>
+
+  <div class="footer__eto-activities">
+    <p><strong>Étoの活動</strong></p>
+    <ul>
+      <li><a href="#">World of Éto</a></li>
+      <li><a href="#">社会的な責任</a></li>
+      <li><a href="#">ウェブサイトポリシー</a></li>
+      <li><a href="#">サイト インデックス</a></li>
+    </ul>
+    <label for="region-select" class="footer__region-label">地域を選択：▼</label>
+    <select id="region-select" name="region" class="footer__region-select" aria-label="地域選択">
+      <option value="jp">日本</option>
+      <option value="us">アメリカ</option>
+      <option value="eu">ヨーロッパ</option>
+      <!-- 他の地域も必要なら追加 -->
+    </select>
+  </div>
+
+  <div class="footer__latest-info">
+    <p><strong>Étoの最新情報</strong></p>
+    <p>ご登録いただいた方には、新作やイベント、新店舗などの最新情報をいち早くお届けします。</p>
+    <div class="footer__social-icons" role="list">
+      <a href="#" aria-label="Instagram" class="footer__icon footer__icon--instagram" role="listitem">
+        <!-- アイコン画像やSVGをここに入れる -->
+        <img src="./common/icon_instagram.svg" alt="Instagram">
+      </a>
+      <a href="#" aria-label="X" class="footer__icon footer__icon--x" role="listitem">
+        <img src="./common/icon_x.svg" alt="X">
+      </a>
+      <a href="#" aria-label="YouTube" class="footer__icon footer__icon--youtube" role="listitem">
+        <img src="./common/icon_youtube.svg" alt="YouTube">
+      </a>
+      <a href="#" aria-label="LINE" class="footer__icon footer__icon--line" role="listitem">
+        <img src="./common/icon_line.svg" alt="LINE">
+      </a>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <!-- コピーライト -->
+    <div class="footer__copyright"><p>© Eto</p></div>
+  </footer>
+
+  <!-- =============================
+       JS読み込み
+  ============================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/top.js"></script>
+</body>
+</html>
