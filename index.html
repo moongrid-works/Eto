@@ -54,16 +54,14 @@
   <div class="header__main">
 
     <!-- ブランドロゴ -->
-    <div class="header__logo">
-      <a href="#top" aria-label="Eto ホーム">
-    <img src="./common/SVG/Brandikon.svg" alt="Eto ブランドアイコン">
-      </a>
-    </div>
+    <h1 class="header__logo">
+      <a href="#top" aria-label="Eto ホーム"><img src="./common/SVG/Brandikon.svg" alt="Eto ブランドアイコン"></a>
+  </div>
 
     <!-- PCナビゲーション -->
     <nav class="nav-top" aria-label="Primary Navigation">
       <ul class="nav-top__list">
-        <li class="nav-top__item"><a href="#brand-concept" aria-current="page">Brand concept</a></li>
+        <li class="nav-top__item"><a href="#brand-concept">Brand concept</a></li>
         <li class="nav-top__item"><a href="#new-item">New item</a></li>
         <li class="nav-top__item"><a href="#collection">Collection</a></li>
         <li class="nav-top__item"><a href="#story">Story</a></li>
@@ -125,7 +123,6 @@
 
       <!-- SP用画像 -->
        <div class="top__overlay">
-      <!-- ロゴ画像に置き換え -->
   <a href="#top" aria-label="Eto ホーム">
     <img src="./common/SVG/Brandikon.svg" alt="Eto ブランドロゴ" class="top__logo">
   </a>
@@ -141,32 +138,50 @@
          Brand Concept Section
     ============================= -->
     <section class="brand-concept" id="brand-concept">
-      <div class="brand-concept__wrap">
-        <div class="brand-concept__text">
-          <h2 class="brand-concept__title">Brand concept</h2>
-          <span class="brand-concept__catch">―自然体の美しさを、日常に―</span>
-          <p class="brand-concept__description">
-            日々の暮らしを、もう少し自由に。もう少し心地よく。<br>
-            私たちの服づくりは、そんな想いから始まります。<br>
-            大切にしているのは、肩の力を抜いた上品さ。自然素材のぬくもりと、洗練されたシルエット。
-            日常の中で、ふと「これがちょうどいい」と思えるような服。<br>
-            忙しい朝にも、週末の午後にも、家族と過ごす時間や、自分に戻る瞬間にも、そっと寄り添う存在でありたいと思っています。
-            トレンドを追うよりも、長く愛されるスタイルを。<br>
-            華やかさよりも、心からのリラックスを。<br>
-            それは、あなたの人生を少しだけ豊かにする“日常の贅沢”。<br>
-            身にまとうたびに、心まで豊かに整うような、そんな服を、私たちはつくり続けます。<br>
-          </p>
-          <p class="brand-concept__closing">
-            <span class="brand-concept__highlight">Live Beautifully, Naturally.</span>
-            <span class="brand-concept__subtext">―自然体で生きる、という上質。</span>
-          </p>
-        </div>
+  <div class="brand-concept__wrap">
 
-        <div class="brand-concept__image">
-          <img src="./common/material_2【Brandconcept】.jpg" alt="Eto ブランドコンセプトイメージ">
-        </div>
+    <div class="brand-concept__content">
+      <!-- 左：テキスト（4割） -->
+      <div class="brand-concept__text">
+        <h2 class="section-title">Brand concept</h2>
+
+        <p class="brand-concept__text--title">
+          ―自然体の美しさを、日常に―
+        </p>
+
+        <p class="brand-concept__description">
+          日々の暮らしを、もう少し自由に。もう少し心地よく。<br>
+          私たちの服づくりは、そんな想いから始まります。<br>
+          大切にしているのは、肩の力を抜いた上品さ。自然素材のぬくもりと、洗練されたシルエット。
+          日常の中で、ふと「これがちょうどいい」と思えるような服。<br>
+          忙しい朝にも、週末の午後にも、家族と過ごす時間や、自分に戻る瞬間にも、そっと寄り添う存在でありたいと思っています。
+          トレンドを追うよりも、長く愛されるスタイルを。<br>
+          華やかさよりも、心からのリラックスを。<br>
+          それは、あなたの人生を少しだけ豊かにする“日常の贅沢”。<br>
+          身にまとうたびに、心まで豊かに整うような、そんな服を、私たちはつくり続けます。<br>
+        </p>
+
+        <p class="brand-concept__text--subtitle">
+          Live Beautifully, Naturally.
+        </p>
+
+        <p class="brand-concept__subtext">
+          ―自然体で生きる、という上質。
+        </p>
       </div>
-    </section>
+
+      <!-- 右：画像（6割） -->
+      <div class="brand-concept__image">
+        <img
+          src="./common/material_2【Brandconcept】.jpg"
+          alt="Eto ブランドコンセプトイメージ"
+          loading="lazy"
+        >
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <div class="section-divider"></div>
 
@@ -176,7 +191,7 @@
     ============================= -->
     <section class="new-item" id="new-item">
       <header class="new-item__header">
-        <h2 class="new-item__title">New item</h2>
+        <h2 class="section-title">New item</h2>
         <p class="new-item__lead">新作アイテムをご覧いただけます。</p>
       </header>
 
@@ -200,7 +215,7 @@
 
         <!-- テキスト部分 -->
         <div class="collection__text">
-          <h2 class="collection__title">Collection</h2>
+          <h2 class="section-title">Collection</h2>
           <p class="collection__lead">カテゴリー別にご覧いただけます。</p>
         </div>
 
@@ -232,8 +247,13 @@
     ============================= -->
     <section class="story" id="story">
       <div class="story__wrap">
+
+        <div class="story__image">
+          <img src="./common/material_14【Story】.jpg" alt="ストーリーイメージ" loading="lazy">
+        </div>
+        
         <div class="story__text">
-          <h2 class="story__title">Story</h2>
+          <h2 class="section-title">Story</h2>
           <p class="story__description">
             「Éto」の創始者 Aurélie Étoile Moreau（オレリー・エトワール・モロー） は、パリ郊外出身。<br>
             母が趣味で作るレザー小物を見て育ち、「手仕事の美しさ」と「素材の大切さ」を自然に学びました。<br>
@@ -246,9 +266,6 @@
           </p>
         </div>
 
-        <div class="story__image">
-          <img src="./common/material_14【Story】.jpg" alt="ストーリーイメージ" loading="lazy">
-        </div>
       </div>
     </section>
 
@@ -261,9 +278,9 @@
 ============================= -->
 <section class="store" id="store">
   <div class="store__contact-hours">
-    <h2 class="store__title">Store</h2>
+    <h2 class="section-title">Store</h2>
     <div class="store__contact">
-      <p><strong>お問い合わせ</strong></p>
+      <h3>お問い合わせ</h3>
       <ul>
         <li><a href="#">オンラインチャット　＞</a></li>
         <li><a href="#">専用ダイヤルに電話する　＞</a></li>
@@ -273,7 +290,7 @@
       </ul>
     </div>
     <div class="store__hours" aria-label="営業時間情報">
-      <p><strong>営業時間</strong></p>
+      <h3>営業時間</h3>
       <p>10:00～20:00　年中無休（年末年始を除く）。</p>
     </div>
   </div>
@@ -282,7 +299,7 @@
     <div class="store__left-column">
       <img src="./common/material_31【Store_1】.jpg" alt="Store イメージ1" loading="lazy">
       <div class="store__after-service">
-        <p>アフターサービス</p>
+        <h3>アフターサービス</h3>
         <p>クリーニング、修理、サイズ直しのご依頼を承っております。</p>
         <p class="store__link-center"><a href="contact/index.php" class="service_btn">サービスのご依頼　＞</a></p>
       </div>
@@ -290,7 +307,7 @@
     <div class="store__right-column">
       <img src="./common/material_28【Store_2】.jpg" alt="Store イメージ2" loading="lazy">
       <div class="store__care">
-        <p>製品のお手入れ</p>
+        <h3>製品のお手入れ</h3>
         <p>メタルやレザー、ジュエリーの素材のお手入れ方法をご覧ください。</p>
         <p class="store__link-center"><a href="#">詳しく見る　＞</a></p>
       </div>
@@ -337,11 +354,11 @@
       <li><a href="#">ウェブサイトポリシー</a></li>
       <li><a href="#">サイト インデックス</a></li>
     </ul>
-    <label for="region-select" class="footer__region-label">地域を選択：▼</label>
+    <label for="region-select" class="footer__region-label">地域を選択：</label>▼
     <select id="region-select" name="region" class="footer__region-select" aria-label="地域選択">
       <option value="jp">日本</option>
-      <option value="us">アメリカ</option>
-      <option value="eu">ヨーロッパ</option>
+      <option value="us">Americas</option>
+      <option value="eu">Europe</option>
       <!-- 他の地域も必要なら追加 -->
     </select>
   </div>
@@ -350,18 +367,18 @@
     <p><strong>Étoの最新情報</strong></p>
     <p>ご登録いただいた方には、新作やイベント、新店舗などの最新情報をいち早くお届けします。</p>
     <div class="footer__social-icons" role="list">
+
       <a href="#" aria-label="Instagram" class="footer__icon footer__icon--instagram" role="listitem">
-        <!-- アイコン画像やSVGをここに入れる -->
-        <img src="./common/icon_instagram.svg" alt="Instagram">
-      </a>
+      <img src="./common/Instagram_Glyph_Gradient.svg" alt="">
+    </a>
       <a href="#" aria-label="X" class="footer__icon footer__icon--x" role="listitem">
-        <img src="./common/icon_x.svg" alt="X">
+      <img src="./common/logo-black.png" alt="">
       </a>
       <a href="#" aria-label="YouTube" class="footer__icon footer__icon--youtube" role="listitem">
-        <img src="./common/icon_youtube.svg" alt="YouTube">
+      <img src="./common/yt_icon_red_digital.png" alt="">
       </a>
       <a href="#" aria-label="LINE" class="footer__icon footer__icon--line" role="listitem">
-        <img src="./common/icon_line.svg" alt="LINE">
+      <img src="./common/LINE_APP_iOS.png" alt="">
       </a>
     </div>
   </div>
