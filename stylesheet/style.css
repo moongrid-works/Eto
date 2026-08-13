@@ -266,6 +266,16 @@ h2.section-title {
   width: 100%;
 }
 
+.brand-concept .section-title {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .brand-concept {
+    margin-top: 50px;
+  }
+}
+
 .brand-concept__wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -281,6 +291,8 @@ h2.section-title {
   .brand-concept__content {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
   }
 }
 
@@ -304,9 +316,10 @@ h2.section-title {
   flex: 6;
 }
 .brand-concept__image img {
-  width: 100%;
+  width: 75%;
   height: auto;
   display: block;
+  margin-left: auto;
 }
 
 .new-item__slider .new-item__slide img {
@@ -366,20 +379,23 @@ h2.section-title {
 .story__wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .story__wrap .story__image {
-  flex: 4.5;
+  flex: 5;
 }
 .story__wrap .story__image img {
   width: 100%;
   height: auto;
-  max-width: 600px;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
 }
 .story__wrap .story__text {
-  flex: 5.5;
+  flex: 5;
   display: flex;
   justify-content: center;
 }
@@ -406,14 +422,12 @@ h2.section-title {
   width: 100%;
   padding: 2rem 0;
 }
-.store__title {
-  display: block;
-  margin-bottom: 20px;
-}
+
 .store__contact-hours {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  gap: 4rem;
   margin-bottom: 2rem;
   padding: 0 1rem;
   width: 100%;
@@ -422,8 +436,8 @@ h2.section-title {
   margin-right: auto;
 }
 .store__contact-hours .store__contact {
-  flex: 1;
-  width: 100%;
+  flex: 0 0 450;
+  width: 450px;
 }
 .store__contact-hours .store__contact p {
   font-weight: bold;
@@ -467,12 +481,12 @@ h2.section-title {
 }
 .store__images-texts .store__left-column,
 .store__images-texts .store__right-column {
-  flex: 1 1 300px;
+  flex: 0 1 500px;
   text-align: center;
 }
 .store__images-texts .store__left-column img,
 .store__images-texts .store__right-column img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 .store__images-texts .store__left-column .store__after-service,
@@ -653,3 +667,13 @@ h2.section-title {
     flex: none;
   }
 }/*# sourceMappingURL=style.css.map */
+
+.section-divider {
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .section-divider {
+    height: 50px;
+  }
+}
