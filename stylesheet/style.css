@@ -118,7 +118,7 @@ h2.section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.6s ease, background-color 0.6s ease;
+  transition: transform 0.6s ease, background-color 0.6s ease;
   /*border: 1px solid $color-bg;   // 円の外側に細い線*/
 }
 .hamburger span {
@@ -131,7 +131,9 @@ h2.section-title {
   background: #fff;
   margin-left: -30%;
   margin-top: -1.5px;
-  transition: transform 0.6s ease, opacity 0.6s ease, background-color 0.6s ease;
+  transition: transform 0.6s ease,
+  opacity 0.6s ease,
+  background-color 0.6s ease;
 }
 .hamburger.open {
   transform: rotateY(180deg);
@@ -276,13 +278,16 @@ h2.section-title {
   }
   .brand-concept__image {
     width: 100vw;
-    margin-left: calc(50% - 50vw);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .brand-concept__image img {
     width: 100%;
     height: auto;
-    margin-left: 0;
+    display: block;
+    margin: 0;
   }
 }
 
