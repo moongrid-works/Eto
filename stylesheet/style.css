@@ -131,25 +131,30 @@ h2.section-title {
   background: #fff;
   margin-left: -30%;
   margin-top: -1.5px;
-  transition: transform 0.6s ease,
-  opacity 0.6s ease,
-  background-color 0.6s ease;
+  transition: transform 0.6s ease, background-color 0.6s ease;
 }
+
+/* タップ後 */
 .hamburger.open {
   transform: rotateY(180deg);
   background-color: #fff;
 }
+
 .hamburger.open span {
   background-color: #81d8d0;
 }
-.hamburger.open span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+
+/* 1本目・3本目で×を作る */
+.hamburger span:nth-child(1) {
+  transform: rotate(45deg);
 }
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
+
+.hamburger span:nth-child(2) {
+  display: none;
 }
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+
+.hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .drawer {
@@ -278,13 +283,12 @@ h2.section-title {
   }
   .brand-concept__image {
     width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: calc(50% - 50vw);
   }
 
   .brand-concept__image img {
-    width: 100%;
+    width: 100% !important;
+    max-width: none !important;
     height: auto;
     display: block;
     margin: 0;
